@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            AsyncImage(url: URL(string: "https://cineuropa.org/imgCache/2018/12/11/1544541049322_0620x0435_0x0x0x0_1573329743140.jpg"),scale: 2)
+            
             AsyncImage(url: URL(string: "https://cineuropa.org/imgCache/2018/12/11/1544541049322_0620x0435_0x0x0x0_1573329743140.jpg")) { image in
                 image
                     .resizable()
@@ -17,7 +19,7 @@ struct ContentView: View {
             } placeholder: {
                 ProgressView()
             }
-            .frame(height: 200)
+            .frame(height: 150)
         }
         
         AsyncImage(url: URL(string: "https://hws.dev/img/bad/png")) { phase in
